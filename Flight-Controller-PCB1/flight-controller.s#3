@@ -49,6 +49,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -58,14 +59,68 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="fp3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="no" active="no"/>
+<layer number="118" name="mVias" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="mtStop" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="no" active="no"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
@@ -75,6 +130,24 @@
 <layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
 <layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
 <layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -418,6 +491,200 @@ Supplier: DigiKey H11574CT-ND&lt;/li&gt;&lt;/ul&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="Teensy_DIY_v1.0">
+<packages>
+<package name="QFN50P300X300X100-17N">
+<smd name="1" x="-1.4732" y="0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="2" x="-1.4732" y="0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="3" x="-1.4732" y="-0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="4" x="-1.4732" y="-0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="5" x="-0.762" y="-1.4732" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="6" x="-0.254" y="-1.4732" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="7" x="0.254" y="-1.4732" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="8" x="0.762" y="-1.4732" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="9" x="1.4732" y="-0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="10" x="1.4732" y="-0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="11" x="1.4732" y="0.254" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="12" x="1.4732" y="0.762" dx="0.3048" dy="0.8128" layer="1" rot="R270"/>
+<smd name="13" x="0.762" y="1.4732" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="14" x="0.254" y="1.4732" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="15" x="-0.254" y="1.4732" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="16" x="-0.762" y="1.4732" dx="0.3048" dy="0.8128" layer="1" rot="R180"/>
+<smd name="17" x="0" y="0" dx="1.7018" dy="1.7018" layer="1"/>
+<wire x1="2.2352" y1="-0.2286" x2="3.2258" y2="-0.2286" width="0.1524" layer="21"/>
+<wire x1="1.5748" y1="1.2446" x2="1.5748" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="1.2446" y1="-1.5748" x2="1.5748" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="-1.2446" y1="1.5748" x2="-1.5748" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-1.5748" y1="-1.5748" x2="-1.2446" y2="-1.5748" width="0.1524" layer="21"/>
+<wire x1="1.5748" y1="-1.5748" x2="1.5748" y2="-1.2446" width="0.1524" layer="21"/>
+<wire x1="1.5748" y1="1.5748" x2="1.2446" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-1.5748" y1="1.5748" x2="-1.5748" y2="1.2446" width="0.1524" layer="21"/>
+<wire x1="-1.5748" y1="-1.2446" x2="-1.5748" y2="-1.5748" width="0.1524" layer="21"/>
+<text x="-3.0988" y="0.7366" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-1.5748" y1="0.3048" x2="-0.3048" y2="1.5748" width="0" layer="51"/>
+<wire x1="0.889" y1="1.5748" x2="0.6096" y2="1.5748" width="0" layer="51"/>
+<wire x1="0.4064" y1="1.5748" x2="0.1016" y2="1.5748" width="0" layer="51"/>
+<wire x1="-0.1016" y1="1.5748" x2="-0.4064" y2="1.5748" width="0" layer="51"/>
+<wire x1="-0.6096" y1="1.5748" x2="-0.889" y2="1.5748" width="0" layer="51"/>
+<wire x1="-1.5748" y1="0.889" x2="-1.5748" y2="0.6096" width="0" layer="51"/>
+<wire x1="-1.5748" y1="0.4064" x2="-1.5748" y2="0.1016" width="0" layer="51"/>
+<wire x1="-1.5748" y1="-0.1016" x2="-1.5748" y2="-0.4064" width="0" layer="51"/>
+<wire x1="-1.5748" y1="-0.6096" x2="-1.5748" y2="-0.889" width="0" layer="51"/>
+<wire x1="-0.889" y1="-1.5748" x2="-0.6096" y2="-1.5748" width="0" layer="51"/>
+<wire x1="-0.4064" y1="-1.5748" x2="-0.1016" y2="-1.5748" width="0" layer="51"/>
+<wire x1="0.1016" y1="-1.5748" x2="0.4064" y2="-1.5748" width="0" layer="51"/>
+<wire x1="0.6096" y1="-1.5748" x2="0.889" y2="-1.5748" width="0" layer="51"/>
+<wire x1="1.5748" y1="-0.889" x2="1.5748" y2="-0.6096" width="0" layer="51"/>
+<wire x1="1.5748" y1="-0.4064" x2="1.5748" y2="-0.1016" width="0" layer="51"/>
+<wire x1="1.5748" y1="0.1016" x2="1.5748" y2="0.4064" width="0" layer="51"/>
+<wire x1="1.5748" y1="0.6096" x2="1.5748" y2="0.889" width="0" layer="51"/>
+<wire x1="-1.5748" y1="-1.5748" x2="1.5748" y2="-1.5748" width="0" layer="51"/>
+<wire x1="1.5748" y1="-1.5748" x2="1.5748" y2="1.5748" width="0" layer="51"/>
+<wire x1="1.5748" y1="1.5748" x2="-1.5748" y2="1.5748" width="0" layer="51"/>
+<wire x1="-1.5748" y1="1.5748" x2="-1.5748" y2="-1.5748" width="0" layer="51"/>
+<text x="-3.0988" y="0.7366" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-3.4544" y="3.937" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-5.08" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+</package>
+<package name="TQFP32-08">
+<description>&lt;B&gt;Thin Plasic Quad Flat Package&lt;/B&gt; Grid 0.8 mm</description>
+<wire x1="3.505" y1="3.505" x2="3.505" y2="-3.505" width="0.1524" layer="21"/>
+<wire x1="3.505" y1="-3.505" x2="-3.505" y2="-3.505" width="0.1524" layer="21"/>
+<wire x1="-3.505" y1="-3.505" x2="-3.505" y2="3.15" width="0.1524" layer="21"/>
+<wire x1="-3.15" y1="3.505" x2="3.505" y2="3.505" width="0.1524" layer="21"/>
+<wire x1="-3.15" y1="3.505" x2="-3.505" y2="3.15" width="0.1524" layer="21"/>
+<circle x="-2.7432" y="2.7432" radius="0.3592" width="0.1524" layer="21"/>
+<smd name="1" x="-4.2926" y="2.8" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="2" x="-4.2926" y="2" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="3" x="-4.2926" y="1.2" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="4" x="-4.2926" y="0.4" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="5" x="-4.2926" y="-0.4" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="6" x="-4.2926" y="-1.2" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="7" x="-4.2926" y="-2" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="8" x="-4.2926" y="-2.8" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="9" x="-2.8" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="10" x="-2" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="11" x="-1.2" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="12" x="-0.4" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="13" x="0.4" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="14" x="1.2" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="15" x="2" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="16" x="2.8" y="-4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="17" x="4.2926" y="-2.8" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="18" x="4.2926" y="-2" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="19" x="4.2926" y="-1.2" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="20" x="4.2926" y="-0.4" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="21" x="4.2926" y="0.4" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="22" x="4.2926" y="1.2" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="23" x="4.2926" y="2" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="24" x="4.2926" y="2.8" dx="1.27" dy="0.5588" layer="1"/>
+<smd name="25" x="2.8" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="26" x="2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="27" x="1.2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="28" x="0.4" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="29" x="-0.4" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="30" x="-1.2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="31" x="-2" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<smd name="32" x="-2.8" y="4.2926" dx="0.5588" dy="1.27" layer="1"/>
+<text x="-3.175" y="5.08" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<rectangle x1="-4.5466" y1="2.5714" x2="-3.556" y2="3.0286" layer="51"/>
+<rectangle x1="-4.5466" y1="1.7714" x2="-3.556" y2="2.2286" layer="51"/>
+<rectangle x1="-4.5466" y1="0.9714" x2="-3.556" y2="1.4286" layer="51"/>
+<rectangle x1="-4.5466" y1="0.1714" x2="-3.556" y2="0.6286" layer="51"/>
+<rectangle x1="-4.5466" y1="-0.6286" x2="-3.556" y2="-0.1714" layer="51"/>
+<rectangle x1="-4.5466" y1="-1.4286" x2="-3.556" y2="-0.9714" layer="51"/>
+<rectangle x1="-4.5466" y1="-2.2286" x2="-3.556" y2="-1.7714" layer="51"/>
+<rectangle x1="-4.5466" y1="-3.0286" x2="-3.556" y2="-2.5714" layer="51"/>
+<rectangle x1="-3.0286" y1="-4.5466" x2="-2.5714" y2="-3.556" layer="51"/>
+<rectangle x1="-2.2286" y1="-4.5466" x2="-1.7714" y2="-3.556" layer="51"/>
+<rectangle x1="-1.4286" y1="-4.5466" x2="-0.9714" y2="-3.556" layer="51"/>
+<rectangle x1="-0.6286" y1="-4.5466" x2="-0.1714" y2="-3.556" layer="51"/>
+<rectangle x1="0.1714" y1="-4.5466" x2="0.6286" y2="-3.556" layer="51"/>
+<rectangle x1="0.9714" y1="-4.5466" x2="1.4286" y2="-3.556" layer="51"/>
+<rectangle x1="1.7714" y1="-4.5466" x2="2.2286" y2="-3.556" layer="51"/>
+<rectangle x1="2.5714" y1="-4.5466" x2="3.0286" y2="-3.556" layer="51"/>
+<rectangle x1="3.556" y1="-3.0286" x2="4.5466" y2="-2.5714" layer="51"/>
+<rectangle x1="3.556" y1="-2.2286" x2="4.5466" y2="-1.7714" layer="51"/>
+<rectangle x1="3.556" y1="-1.4286" x2="4.5466" y2="-0.9714" layer="51"/>
+<rectangle x1="3.556" y1="-0.6286" x2="4.5466" y2="-0.1714" layer="51"/>
+<rectangle x1="3.556" y1="0.1714" x2="4.5466" y2="0.6286" layer="51"/>
+<rectangle x1="3.556" y1="0.9714" x2="4.5466" y2="1.4286" layer="51"/>
+<rectangle x1="3.556" y1="1.7714" x2="4.5466" y2="2.2286" layer="51"/>
+<rectangle x1="3.556" y1="2.5714" x2="4.5466" y2="3.0286" layer="51"/>
+<rectangle x1="2.5714" y1="3.556" x2="3.0286" y2="4.5466" layer="51"/>
+<rectangle x1="1.7714" y1="3.556" x2="2.2286" y2="4.5466" layer="51"/>
+<rectangle x1="0.9714" y1="3.556" x2="1.4286" y2="4.5466" layer="51"/>
+<rectangle x1="0.1714" y1="3.556" x2="0.6286" y2="4.5466" layer="51"/>
+<rectangle x1="-0.6286" y1="3.556" x2="-0.1714" y2="4.5466" layer="51"/>
+<rectangle x1="-1.4286" y1="3.556" x2="-0.9714" y2="4.5466" layer="51"/>
+<rectangle x1="-2.2286" y1="3.556" x2="-1.7714" y2="4.5466" layer="51"/>
+<rectangle x1="-3.0286" y1="3.556" x2="-2.5714" y2="4.5466" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BOOTLOADER">
+<pin name="GND" x="-15.24" y="2.54" length="middle"/>
+<pin name="PTB5" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="PTA7" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="PTA4" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="PTB2" x="-15.24" y="-2.54" length="middle"/>
+<pin name="VDD" x="-15.24" y="5.08" length="middle"/>
+<pin name="PTB0" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="PTA3" x="-15.24" y="0" length="middle"/>
+<pin name="PTA6" x="-15.24" y="-5.08" length="middle"/>
+<pin name="PTB1" x="15.24" y="0" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CURRENT_BOOTLOADER" prefix="3X3MM">
+<description>MKL02Z32 and MKL04Z32 bootloader chips for Teensy LC (MKL26) and Teensy 3.2 (MKL20D256) processors.
+&lt;p&gt;Remember, all power supply pins need to be decoupled! Also note the connections that Paul recommends on his bootloader page.</description>
+<gates>
+<gate name="G$1" symbol="BOOTLOADER" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="3X3MM" package="QFN50P300X300X100-17N">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 17"/>
+<connect gate="G$1" pin="PTA3" pad="3"/>
+<connect gate="G$1" pin="PTA4" pad="4"/>
+<connect gate="G$1" pin="PTA6" pad="6"/>
+<connect gate="G$1" pin="PTA7" pad="7"/>
+<connect gate="G$1" pin="PTB0" pad="8"/>
+<connect gate="G$1" pin="PTB1" pad="9"/>
+<connect gate="G$1" pin="PTB2" pad="10"/>
+<connect gate="G$1" pin="PTB5" pad="13"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LQFP-32" package="TQFP32-08">
+<connects>
+<connect gate="G$1" pin="GND" pad="5 6"/>
+<connect gate="G$1" pin="PTA3" pad="7"/>
+<connect gate="G$1" pin="PTA4" pad="8"/>
+<connect gate="G$1" pin="PTA6" pad="10"/>
+<connect gate="G$1" pin="PTA7" pad="15"/>
+<connect gate="G$1" pin="PTB0" pad="16"/>
+<connect gate="G$1" pin="PTB1" pad="17"/>
+<connect gate="G$1" pin="PTB2" pad="18"/>
+<connect gate="G$1" pin="PTB5" pad="25"/>
+<connect gate="G$1" pin="VDD" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -430,6 +697,7 @@ Supplier: DigiKey H11574CT-ND&lt;/li&gt;&lt;/ul&gt;
 <parts>
 <part name="U$1" library="Teensy_3_and_LC_Series_Boards_v1.0" deviceset="TEENSY_3.1_ALL_PINS_AND_PADS" device=""/>
 <part name="U$2" library="con-hirose" deviceset="MICRO-USB-" device="ZX62R-B-5P"/>
+<part name="3X3MM1" library="Teensy_DIY_v1.0" deviceset="CURRENT_BOOTLOADER" device="LQFP-32"/>
 </parts>
 <sheets>
 <sheet>
@@ -438,6 +706,7 @@ Supplier: DigiKey H11574CT-ND&lt;/li&gt;&lt;/ul&gt;
 <instances>
 <instance part="U$1" gate="G$1" x="129.54" y="50.8"/>
 <instance part="U$2" gate="G$1" x="-12.7" y="50.8"/>
+<instance part="3X3MM1" gate="G$1" x="25.4" y="88.9"/>
 </instances>
 <busses>
 </busses>

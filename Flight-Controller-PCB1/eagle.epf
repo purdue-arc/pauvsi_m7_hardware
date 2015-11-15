@@ -487,10 +487,31 @@ UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/I
 UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/Connectors/powerconnectorskt.lbr"
 UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/Connectors/ptr_ak130.lbr"
 UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/Connectors/stv_conec_dlsnyyan23x.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Freescale_By_element14_Batch_1.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Teensy_DIY_v1.0.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Texas Instruments_By_element14_Batch_1.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/arduino.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/ArduinoBoards.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/austriamicrosystems_as1322.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/digi_xbee.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/fairchild_fds.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/funnel_logo.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/inductor_toko.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/irlml.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/keystone.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/kotobuki.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/memory_protection_devices.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/national_lp38691.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/nikkai_ss.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/omron_b3sn.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/SUNLIKE_LCD_SD1602.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/teensy2.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/teensypp.lbr"
+UsedLibrary="/Users/kevinsheridan/Documents/Mac Library/Research & Development/IARC - Mission 7/Mission-7-Flight-Controller/Eagle-Libraries-master/My libs/ti_txb0104.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="227 204 826 603"
+Loc="763 142 1362 541"
 State=2
 Number=0
 
