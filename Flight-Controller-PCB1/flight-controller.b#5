@@ -733,21 +733,21 @@ design rules under a new name.</description>
 <attribute name="MPN" value="GRM188R60J106ME47D" x="3.81" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Murata" x="3.81" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C11" library="appfruits" package="0603-CAP" value="0.1uF" x="-15.24" y="36.83">
-<attribute name="MPN" value="C0603C104J3RACTU" x="-15.24" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Kemet" x="-15.24" y="36.83" size="1.778" layer="27" display="off"/>
+<element name="C11" library="appfruits" package="0603-CAP" value="0.1uF" x="41.91" y="24.13" rot="R180">
+<attribute name="MPN" value="C0603C104J3RACTU" x="41.91" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="Kemet" x="41.91" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C14" library="appfruits" package="0603-CAP" value="0.1uF" x="17.78" y="6.35" rot="R180">
 <attribute name="MPN" value="C0603C104J3RACTU" x="17.78" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Kemet" x="17.78" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C16" library="appfruits" package="0603-CAP" value="0.1uF" x="-22.86" y="36.83">
-<attribute name="MPN" value="C0603C104J3RACTU" x="-22.86" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Kemet" x="-22.86" y="36.83" size="1.778" layer="27" display="off"/>
+<element name="C16" library="appfruits" package="0603-CAP" value="0.1uF" x="38.1" y="22.86" rot="R90">
+<attribute name="MPN" value="C0603C104J3RACTU" x="38.1" y="22.86" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Kemet" x="38.1" y="22.86" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C17" library="appfruits" package="0603-CAP" value="2.2uF" x="-26.67" y="36.83">
-<attribute name="MPN" value="C0603C225K4PACTU" x="-26.67" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Kemet" x="-26.67" y="36.83" size="1.778" layer="27" display="off"/>
+<element name="C17" library="appfruits" package="0603-CAP" value="2.2uF" x="34.29" y="17.78" rot="R90">
+<attribute name="MPN" value="C0603C225K4PACTU" x="34.29" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Kemet" x="34.29" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C18" library="appfruits" package="0603-CAP" value="0.1uF" x="24.13" y="17.78" rot="R90">
 <attribute name="MPN" value="C0603C104J3RACTU" x="24.13" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
@@ -765,9 +765,9 @@ design rules under a new name.</description>
 <attribute name="MPN" value="C0603C225K4PACTU" x="29.21" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Kemet" x="29.21" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C21" library="appfruits" package="0603-CAP" value="0.1uF" x="-41.91" y="36.83">
-<attribute name="MPN" value="C0603C104J3RACTU" x="-41.91" y="36.83" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Kemet" x="-41.91" y="36.83" size="1.778" layer="27" display="off"/>
+<element name="C21" library="appfruits" package="0603-CAP" value="0.1uF" x="41.91" y="2.54" rot="R90">
+<attribute name="MPN" value="C0603C104J3RACTU" x="41.91" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Kemet" x="41.91" y="2.54" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C22" library="appfruits" package="0603-CAP" value="0.1uF" x="16.51" y="2.54" rot="R270">
 <attribute name="MPN" value="C0603C104J3RACTU" x="16.51" y="2.54" size="1.778" layer="27" rot="R270" display="off"/>
@@ -821,9 +821,9 @@ design rules under a new name.</description>
 <attribute name="MPN" value="ERJ-3GEYJ102V" x="7.62" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Panasonic" x="7.62" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R16" library="appfruits" package="0603-RES" value="470" x="-19.05" y="44.45">
-<attribute name="MPN" value="ERJ-3GEYJ471V" x="-19.05" y="44.45" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Panasonic" x="-19.05" y="44.45" size="1.778" layer="27" display="off"/>
+<element name="R16" library="appfruits" package="0603-RES" value="470" x="45.72" y="22.86" rot="R90">
+<attribute name="MPN" value="ERJ-3GEYJ471V" x="45.72" y="22.86" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Panasonic" x="45.72" y="22.86" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R2" library="appfruits" package="0603-RES" value="10K" x="20.32" y="22.86" rot="R90">
 <attribute name="MPN" value="ERJ-3GEYJ103V" x="20.32" y="22.86" size="1.778" layer="27" rot="R90" display="off"/>
@@ -869,9 +869,9 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="IC-10035" x="12.7" y="22.86" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U3" library="TeensyCustom" package="MINI54TAN" value="MINI54TAN" x="31.75" y="6.35" rot="R180"/>
-<element name="Y1" library="appfruits" package="CRYSTAL-TXC-7A" value="32.768KHz" x="39.37" y="15.24" rot="R270">
-<attribute name="MPN" value="FC-255 32.7680K-A3" x="39.37" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="Epson Timing" x="39.37" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="Y1" library="appfruits" package="CRYSTAL-TXC-7A" value="32.768KHz" x="40.64" y="13.97" rot="R270">
+<attribute name="MPN" value="FC-255 32.7680K-A3" x="40.64" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Epson Timing" x="40.64" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="Y2" library="appfruits" package="CRYSTAL-SMD-5X3" value="16Mhz/8pF" x="50.8" y="2.54" rot="R180">
 <attribute name="MPN" value="ECS-160-8-30B-CKM" x="50.8" y="2.54" size="1.778" layer="27" rot="R180" display="off"/>
@@ -905,7 +905,8 @@ design rules under a new name.</description>
 <wire x1="56.59" y1="8.27" x2="55.59" y2="19.67" width="0" layer="19" extent="1-1"/>
 <wire x1="57.15" y1="3.39" x2="56.59" y2="8.27" width="0" layer="19" extent="1-1"/>
 <wire x1="47.64" y1="10.72" x2="56.59" y2="8.27" width="0" layer="19" extent="1-1"/>
-<wire x1="36.25" y1="8.6" x2="47.64" y2="10.72" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="3.39" x2="47.64" y2="10.72" width="0" layer="19" extent="1-1"/>
+<wire x1="36.25" y1="8.6" x2="41.91" y2="3.39" width="0" layer="19" extent="1-1"/>
 <wire x1="32.5" y1="10.85" x2="36.25" y2="8.6" width="0" layer="19" extent="1-1"/>
 <wire x1="27.25" y1="7.1" x2="32.5" y2="10.85" width="0" layer="19" extent="1-1"/>
 <wire x1="29" y1="1.85" x2="27.25" y2="7.1" width="0" layer="19" extent="1-1"/>
@@ -922,7 +923,6 @@ design rules under a new name.</description>
 <wire x1="3.49" y1="20.32" x2="4.1" y2="11.4" width="0" layer="19" extent="1-1"/>
 <wire x1="1.69" y1="22.86" x2="3.49" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.27" y1="48.26" x2="1.69" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.06" y1="36.83" x2="-21.27" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="U2" pad="3"/>
@@ -975,8 +975,9 @@ design rules under a new name.</description>
 <wire x1="47.64" y1="15.72" x2="53.59" y2="19.67" width="0" layer="19" extent="1-1"/>
 <wire x1="47.64" y1="11.22" x2="47.64" y2="15.72" width="0" layer="19" extent="1-1"/>
 <wire x1="57.09" y1="8.27" x2="47.64" y2="11.22" width="0" layer="19" extent="1-1"/>
-<wire x1="36.25" y1="6.6" x2="47.64" y2="11.22" width="0" layer="19" extent="1-1"/>
-<wire x1="36.25" y1="6.1" x2="36.25" y2="6.6" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="1.69" x2="47.64" y2="11.22" width="0" layer="19" extent="1-1"/>
+<wire x1="36.25" y1="6.1" x2="41.91" y2="1.69" width="0" layer="19" extent="1-1"/>
+<wire x1="36.25" y1="6.6" x2="36.25" y2="6.1" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="16.93" x2="36.25" y2="6.6" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="16.93" x2="29.21" y2="16.93" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="16.93" x2="26.67" y2="16.93" width="0" layer="19" extent="1-1"/>
@@ -986,8 +987,7 @@ design rules under a new name.</description>
 <wire x1="16.51" y1="3.39" x2="21.59" y2="16.93" width="0" layer="19" extent="1-1"/>
 <wire x1="9.31" y1="5.08" x2="16.51" y2="3.39" width="0" layer="19" extent="1-1"/>
 <wire x1="1.27" y1="3.417" x2="9.31" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="-42.76" y1="36.83" x2="7.62" y2="22.01" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.96" y1="44.45" x2="-42.76" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.96" y1="44.45" x2="7.62" y2="22.01" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PS">
 <contactref element="U2" pad="8"/>
@@ -1060,21 +1060,21 @@ design rules under a new name.</description>
 <contactref element="U1" pad="13"/>
 <contactref element="R16" pad="1"/>
 <contactref element="C17" pad="1"/>
-<wire x1="-19.9" y1="44.45" x2="51.09" y2="19.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.52" y1="36.83" x2="-19.9" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-42.86" y1="44.45" x2="-27.52" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="45.72" y1="22.01" x2="51.09" y2="19.67" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="16.93" x2="45.72" y2="22.01" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.86" y1="44.45" x2="34.29" y2="16.93" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREFH">
 <contactref element="U1" pad="14"/>
 <contactref element="R16" pad="2"/>
 <contactref element="C11" pad="1"/>
-<wire x1="-16.09" y1="36.83" x2="50.59" y2="19.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.2" y1="44.45" x2="-16.09" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="42.76" y1="24.13" x2="45.72" y2="23.71" width="0" layer="19" extent="1-1"/>
+<wire x1="50.59" y1="19.67" x2="45.72" y2="23.71" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF_OUT">
 <contactref element="U1" pad="17"/>
 <contactref element="C16" pad="1"/>
-<wire x1="-23.71" y1="36.83" x2="47.64" y2="17.72" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="22.01" x2="47.64" y2="17.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$27">
 <contactref element="U1" pad="32"/>
@@ -1089,12 +1089,12 @@ design rules under a new name.</description>
 <signal name="N$29">
 <contactref element="U1" pad="19"/>
 <contactref element="Y1" pad="P$2"/>
-<wire x1="39.37" y1="17.09" x2="47.64" y2="16.72" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="15.82" x2="47.64" y2="16.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$30">
 <contactref element="U1" pad="20"/>
 <contactref element="Y1" pad="P$1"/>
-<wire x1="39.37" y1="13.39" x2="47.64" y2="16.22" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="12.12" x2="47.64" y2="16.22" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="U1" pad="52"/>
@@ -1112,10 +1112,10 @@ design rules under a new name.</description>
 <contactref element="C11" pad="2"/>
 <contactref element="C16" pad="2"/>
 <wire x1="50.09" y1="19.67" x2="49.59" y2="19.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.39" y1="36.83" x2="49.59" y2="19.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.01" y1="36.83" x2="-14.39" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.82" y1="36.83" x2="-22.01" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.37" y1="48.26" x2="-22.01" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="41.06" y1="24.13" x2="49.59" y2="19.67" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="23.71" x2="41.06" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="18.63" x2="38.1" y2="23.71" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.37" y1="48.26" x2="34.29" y2="18.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_SHIELD">
 <contactref element="J1" pad="S1"/>

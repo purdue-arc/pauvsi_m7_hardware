@@ -126,10 +126,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="25.39" width="0" layer="20"/>
-<wire x1="100" y1="25.39" x2="0" y2="25.39" width="0" layer="20"/>
-<wire x1="0" y1="25.39" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="-1.27" x2="100" y2="-1.27" width="0" layer="20"/>
+<wire x1="100" y1="-1.27" x2="100" y2="26.66" width="0" layer="20"/>
+<wire x1="100" y1="26.66" x2="0" y2="26.66" width="0" layer="20"/>
+<wire x1="0" y1="26.66" x2="0" y2="-1.27" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="appfruits">
@@ -853,11 +853,11 @@ design rules under a new name.</description>
 <attribute name="MPN" value="ERJ-3GEYJ471V" x="3.81" y="1.27" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Panasonic" x="3.81" y="1.27" size="1.778" layer="27" display="off"/>
 </element>
-<element name="RN1" library="resistor-dil" package="EXB34V" value="33" x="6.35" y="12.7" rot="R270">
-<attribute name="MPN" value="EXB-34V330JV" x="6.35" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.35" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="Panasonic" x="6.35" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.35" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="RN1" library="resistor-dil" package="EXB34V" value="33" x="10.16" y="12.7" rot="R270">
+<attribute name="MPN" value="EXB-34V330JV" x="10.16" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="10.16" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Panasonic" x="10.16" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="10.16" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U1" library="appfruits" package="MK20DX256VLH7" value="MK20DX256VLH7" x="53.34" y="13.97" rot="R270">
 <attribute name="MPN" value="MK20DX256VLH7" x="53.34" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1256,12 +1256,12 @@ design rules under a new name.</description>
 <signal name="USB_D_P" class="1">
 <contactref element="U1" pad="5"/>
 <contactref element="RN1" pad="3"/>
-<wire x1="7.05" y1="12.2" x2="55.09" y2="19.67" width="0" layer="19" extent="1-1"/>
+<wire x1="10.86" y1="12.2" x2="55.09" y2="19.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D_N" class="1">
 <contactref element="RN1" pad="4"/>
 <contactref element="U1" pad="6"/>
-<wire x1="7.05" y1="13.2" x2="54.59" y2="19.67" width="0" layer="19" extent="1-1"/>
+<wire x1="10.86" y1="13.2" x2="54.59" y2="19.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ID">
 <contactref element="J1" pad="4"/>
@@ -1448,7 +1448,7 @@ design rules under a new name.</description>
 <contactref element="J1" pad="2"/>
 <contactref element="RN1" pad="1"/>
 <wire x1="4.1148" y1="13.2588" x2="5.6007" y2="13.2588" width="0.254" layer="1"/>
-<wire x1="5.6007" y1="13.2588" x2="5.65" y2="13.2" width="0.254" layer="1"/>
+<wire x1="5.6007" y1="13.2588" x2="9.46" y2="13.2" width="0.254" layer="1"/>
 <wire x1="4.1148" y1="13.2588" x2="4.1" y2="13.35" width="0.254" layer="1"/>
 </signal>
 <signal name="USB_CON_P" class="1">
@@ -1456,7 +1456,7 @@ design rules under a new name.</description>
 <contactref element="RN1" pad="2"/>
 <wire x1="5.1435" y1="12.6873" x2="5.6007" y2="12.2301" width="0.254" layer="1"/>
 <wire x1="4.1148" y1="12.6873" x2="5.1435" y2="12.6873" width="0.254" layer="1"/>
-<wire x1="5.6007" y1="12.2301" x2="5.65" y2="12.2" width="0.254" layer="1"/>
+<wire x1="5.6007" y1="12.2301" x2="9.46" y2="12.2" width="0.254" layer="1"/>
 <wire x1="4.1148" y1="12.6873" x2="4.1" y2="12.7" width="0.254" layer="1"/>
 </signal>
 <signal name="PGND">
