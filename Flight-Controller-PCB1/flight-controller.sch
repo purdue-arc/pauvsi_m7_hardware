@@ -5895,9 +5895,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="5.08" y="60.96" size="3.81" layer="97">Switching Regulator</text>
 <wire x1="0" y1="124.46" x2="246.38" y2="124.46" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="246.38" y1="124.46" x2="246.38" y2="68.58" width="0.4064" layer="97" style="shortdash"/>
-<wire x1="246.38" y1="68.58" x2="246.38" y2="-15.24" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="0" y1="68.58" x2="246.38" y2="68.58" width="0.4064" layer="97" style="shortdash"/>
-<wire x1="246.38" y1="-15.24" x2="246.38" y2="-220.98" width="0.4064" layer="97" style="shortdash"/>
+<wire x1="246.38" y1="68.58" x2="246.38" y2="-220.98" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="0" y1="-220.98" x2="246.38" y2="-220.98" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="0" y1="124.46" x2="0" y2="68.58" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="0" y1="68.58" x2="2.54" y2="12.7" width="0.4064" layer="97" style="shortdash"/>
@@ -6070,10 +6069,10 @@ But it's important to get a clean, noise free 3.3V power supply and it should be
 <attribute name="VALUE" x="-47.498" y="-86.868" size="1.778" layer="96"/>
 </instance>
 <instance part="JP1" gate="G$1" x="-20.32" y="-165.1"/>
-<instance part="U$11" gate="G$1" x="-40.64" y="-48.26"/>
-<instance part="U$13" gate="G$1" x="15.24" y="-48.26"/>
-<instance part="U$15" gate="G$1" x="22.86" y="-48.26"/>
-<instance part="U$16" gate="G$1" x="-63.5" y="-35.56"/>
+<instance part="U$11" gate="G$1" x="-40.64" y="-45.72"/>
+<instance part="U$13" gate="G$1" x="15.24" y="-45.72"/>
+<instance part="U$15" gate="G$1" x="22.86" y="-45.72"/>
+<instance part="U$16" gate="G$1" x="-63.5" y="-25.4"/>
 </instances>
 <busses>
 </busses>
@@ -6419,7 +6418,7 @@ But it's important to get a clean, noise free 3.3V power supply and it should be
 <wire x1="238.76" y1="116.84" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-40.64" y1="-58.42" x2="-40.64" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-58.42" x2="-40.64" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-63.5" x2="-40.64" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="-60.96" x2="-40.64" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-40.64" y="-58.42"/>
@@ -6430,19 +6429,25 @@ But it's important to get a clean, noise free 3.3V power supply and it should be
 <pinref part="U$11" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="15.24" y1="-53.34" x2="15.24" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-53.34" x2="15.24" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="U$13" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="22.86" y1="-55.88" x2="22.86" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-55.88" x2="22.86" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="U$15" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="-63.5" y1="-38.1" x2="-63.5" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="-27.94" x2="-63.5" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="U$16" gate="G$1" pin="3.3V"/>
+<pinref part="JP1" gate="G$1" pin="VCC"/>
+<wire x1="-15.24" y1="-162.56" x2="-2.54" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-162.56" x2="-2.54" y2="-147.32" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-147.32" x2="-101.6" y2="-147.32" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-147.32" x2="-101.6" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-40.64" x2="-63.5" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PS" class="0">
@@ -6841,11 +6846,6 @@ But it's important to get a clean, noise free 3.3V power supply and it should be
 <wire x1="81.28" y1="101.6" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 </segment>
-<segment>
-<wire x1="-15.24" y1="-162.56" x2="-12.7" y2="-162.56" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="VCC"/>
-<label x="-12.7" y="-162.56" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="N$12" class="0">
 <segment>
@@ -6962,18 +6962,22 @@ But it's important to get a clean, noise free 3.3V power supply and it should be
 <label x="-12.7" y="-170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="TXO" class="0">
+<net name="N$9" class="0">
 <segment>
-<wire x1="-15.24" y1="-167.64" x2="-12.7" y2="-167.64" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="RXI"/>
-<label x="-12.7" y="-167.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="TXO"/>
+<wire x1="-15.24" y1="-165.1" x2="20.32" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-165.1" x2="20.32" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="PD0(RXD)"/>
+<wire x1="20.32" y1="-76.2" x2="7.62" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RXI" class="0">
+<net name="N$10" class="0">
 <segment>
-<wire x1="-15.24" y1="-165.1" x2="-12.7" y2="-165.1" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="TXO"/>
-<label x="-12.7" y="-165.1" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="RXI"/>
+<wire x1="-15.24" y1="-167.64" x2="22.86" y2="-167.64" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-167.64" x2="22.86" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="PD1(TXD)"/>
+<wire x1="22.86" y1="-78.74" x2="7.62" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
