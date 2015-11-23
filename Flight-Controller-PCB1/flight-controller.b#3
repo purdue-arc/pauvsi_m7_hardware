@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -133,6 +133,11 @@
 <text x="49.276" y="40.132" size="1.016" layer="121" rot="SR180">Designed by: Kevin Sheridan and Casimir Duchnowski</text>
 <text x="47.498" y="41.148" size="0.6096" layer="121" rot="SR180">Based off: Teensy 3.1 by Paul Stoffregen and Arduino Pro Mini by Team Arduino</text>
 <text x="54.356" y="38.862" size="1.4224" layer="121" rot="SR180">Purdue AUVSI IARC Team Flight Controller 2016</text>
+<hole x="2.54" y="39.37" drill="3.2004"/>
+<hole x="77.47" y="39.37" drill="3.2004"/>
+<hole x="77.47" y="12.7" drill="3.2004"/>
+<hole x="22.352" y="2.286" drill="3.2004"/>
+<text x="78.74" y="30.226" size="0.8128" layer="112" rot="R90">GND</text>
 </plain>
 <libraries>
 <library name="appfruits">

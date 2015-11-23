@@ -133,7 +133,7 @@
 <text x="49.276" y="40.132" size="1.016" layer="121" rot="SR180">Designed by: Kevin Sheridan and Casimir Duchnowski</text>
 <text x="47.498" y="41.148" size="0.6096" layer="121" rot="SR180">Based off: Teensy 3.1 by Paul Stoffregen and Arduino Pro Mini by Team Arduino</text>
 <text x="54.356" y="38.862" size="1.4224" layer="121" rot="SR180">Purdue AUVSI IARC Team Flight Controller 2016</text>
-<hole x="2.54" y="39.37" drill="3.2004"/>
+<hole x="2.54" y="34.036" drill="3.2004"/>
 <hole x="77.47" y="39.37" drill="3.2004"/>
 <hole x="77.47" y="12.7" drill="3.2004"/>
 <hole x="22.352" y="2.286" drill="3.2004"/>
@@ -2138,13 +2138,16 @@ design rules under a new name.</description>
 <wire x1="68.834" y1="2.286" x2="66.548" y2="0" width="0.254" layer="1"/>
 <wire x1="66.548" y1="0" x2="54.864" y2="0" width="0.254" layer="1"/>
 <via x="54.864" y="0" extent="1-16" drill="0.5"/>
-<wire x1="54.864" y1="0" x2="51.816" y2="3.048" width="0.254" layer="16"/>
-<wire x1="51.816" y1="3.048" x2="51.816" y2="6.096" width="0.254" layer="16"/>
 <via x="51.816" y="6.096" extent="1-16" drill="0.5"/>
 <wire x1="51.816" y1="6.096" x2="51.59" y2="6.322" width="0.254" layer="1"/>
 <wire x1="51.59" y1="6.322" x2="51.59" y2="8.27" width="0.254" layer="1"/>
 <contactref element="U4" pad="28"/>
 <wire x1="69.33" y1="19.869" x2="51.708" y2="36.5506" width="0" layer="19" extent="1-1"/>
+<wire x1="54.864" y1="0" x2="54.102" y2="0.762" width="0.254" layer="16"/>
+<wire x1="54.102" y1="0.762" x2="54.102" y2="4.064" width="0.254" layer="16"/>
+<wire x1="54.102" y1="4.064" x2="53.086" y2="5.08" width="0.254" layer="16"/>
+<wire x1="53.086" y1="5.08" x2="52.832" y2="5.08" width="0.254" layer="16"/>
+<wire x1="52.832" y1="5.08" x2="51.816" y2="6.096" width="0.254" layer="16"/>
 </signal>
 <signal name="N$19">
 <contactref element="U3" pad="20"/>

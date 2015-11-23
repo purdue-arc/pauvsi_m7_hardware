@@ -130,6 +130,9 @@
 <wire x1="79.934" y1="-1.27" x2="79.934" y2="41.646" width="0" layer="20"/>
 <wire x1="79.934" y1="41.646" x2="0" y2="41.646" width="0" layer="20"/>
 <wire x1="0" y1="41.646" x2="0" y2="-1.27" width="0" layer="20"/>
+<text x="34.798" y="28.194" size="1.27" layer="121" rot="SR180">Purdue AUVSI IARC Team Flight Controller</text>
+<text x="35.56" y="29.972" size="1.016" layer="121" rot="SR180">Designed by: Kevin Sheridan and Casimir Duchnowski</text>
+<text x="33.274" y="31.496" size="0.6096" layer="121" rot="SR180">Based off: Teensy 3.1 by Paul Stoffregen and Arduino Pro Mini by Team Arduino</text>
 </plain>
 <libraries>
 <library name="appfruits">
