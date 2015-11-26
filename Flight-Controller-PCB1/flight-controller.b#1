@@ -149,6 +149,7 @@
 <text x="67.564" y="32.258" size="0.8128" layer="112" rot="SR180">GND VCC SIG</text>
 <text x="67.564" y="38.354" size="0.8128" layer="112" rot="SR180">GND VCC SIG</text>
 <text x="69.596" y="40.64" size="0.8128" layer="112" rot="SR270">GND VCC SIG</text>
+<text x="4.064" y="24.892" size="0.8128" layer="112" rot="R90">SDA SCL GND</text>
 </plain>
 <libraries>
 <library name="appfruits">
