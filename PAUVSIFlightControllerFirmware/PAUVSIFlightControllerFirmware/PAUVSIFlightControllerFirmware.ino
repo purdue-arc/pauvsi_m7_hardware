@@ -1,3 +1,4 @@
+#include <Kalman.h>
 #include "Wire.h"
 
 #define    MPU9250_ADDRESS            0x68
@@ -13,11 +14,17 @@
 #define    ACC_FULL_SCALE_8_G        0x10
 #define    ACC_FULL_SCALE_16_G       0x18
 
+//the variables for the IMU
 struct ATTITUDE {
   double pitch;
   double roll;
   double yaw_rate;
 } attitude;
+
+uint32_t IMUTimer = 0;
+// Create the Kalman instances
+Kalman kalmanX; 
+Kalman kalmanY;
 
 void setup() {
   Serial.begin(115200);
@@ -32,8 +39,14 @@ void setup() {
  
   // Request first magnetometer single measurement
   I2CwriteByte(MAG_ADDRESS,0x0A,0x01);
+
+  delayMicroseconds(500);
+  //this will initialize the kalman filter with a starting angle
+  //based off the accelerometer
+  initializeKalmanFusion();
 }
 
 void loop() {
-  readAndFuseIMU();
+  attitude = readAndFuseIMU(attitude); // read IMU a fuse it using a kalmna filter which requries previous state
+  Serial.printf("Pitch: %6.1f Roll: %6.1f Yaw_Rate: %6.1f\n", attitude.pitch, attitude.roll, attitude.yaw_rate);
 }
