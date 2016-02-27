@@ -35,7 +35,5 @@ void setup() {
 }
 
 void loop() {
-  delay(100);
-  Serial.println("shut up you faggot");
   readAndFuseIMU();
 }

@@ -25,7 +25,7 @@ void I2CwriteByte(uint8_t Address, uint8_t Register, uint8_t Data)
   Wire.endTransmission();
 }
 
-void readAndFuseIMU()
+ATTITUDE readAndFuseIMU()
 {
   // ____________________________________
   // :::  accelerometer and gyroscope ::: 
@@ -46,23 +46,5 @@ void readAndFuseIMU()
   int16_t gx=-(Buf[8]<<8 | Buf[9]);
   int16_t gy=-(Buf[10]<<8 | Buf[11]);
   int16_t gz=Buf[12]<<8 | Buf[13];
- 
-    // Display values
- 
-  // Accelerometer
-  Serial.print (ax,DEC); 
-  Serial.print ("\t");
-  Serial.print (ay,DEC);
-  Serial.print ("\t");
-  Serial.print (az,DEC);  
-  Serial.print ("\t");
- 
-  // Gyroscope
-  Serial.print (gx,DEC); 
-  Serial.print ("\t");
-  Serial.print (gy,DEC);
-  Serial.print ("\t");
-  Serial.print (gz,DEC);  
-  Serial.print ("\t");
 }
 
