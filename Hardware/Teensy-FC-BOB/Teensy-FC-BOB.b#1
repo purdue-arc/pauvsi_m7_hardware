@@ -310,51 +310,32 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U$1" library="Teensy_3_and_LC_Series_Boards_v1.0" package="TEENSY3-ALL_PINS" value="TEENSY_3.1_ALL_PINS" x="-31.75" y="19.05"/>
-<element name="U$2" library="Teensy_3_and_LC_Series_Boards_v1.0" package="TEENSY3-ALL_PINS" value="TEENSY_3.1_ALL_PINS" x="-50.8" y="19.05"/>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="U$1" pad="GND"/>
 <contactref element="U$1" pad="GND1"/>
-<contactref element="U$2" pad="GND1"/>
-<contactref element="U$2" pad="GND"/>
-<wire x1="-31.75" y1="2.54" x2="-50.8" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="-58.42" y1="35.56" x2="-50.8" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.37" y1="35.56" x2="-58.42" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.37" y1="35.56" x2="-31.75" y2="2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AGND">
 <contactref element="U$1" pad="AGND"/>
-<contactref element="U$2" pad="AGND"/>
-<wire x1="-43.18" y1="33.02" x2="-24.13" y2="33.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="U$1" pad="3.3V"/>
 <contactref element="U$1" pad="3.3V1"/>
-<contactref element="U$2" pad="3.3V1"/>
-<contactref element="U$2" pad="3.3V"/>
-<wire x1="-34.29" y1="2.54" x2="-53.34" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="-43.18" y1="30.48" x2="-34.29" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.13" y1="30.48" x2="-43.18" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.13" y1="30.48" x2="-34.29" y2="2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT">
 <contactref element="U$1" pad="VBAT"/>
-<contactref element="U$2" pad="VBAT"/>
-<wire x1="-36.83" y1="2.54" x2="-55.88" y2="2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AREF">
 <contactref element="U$1" pad="AREF"/>
-<contactref element="U$2" pad="AREF"/>
-<wire x1="-26.67" y1="27.94" x2="-45.72" y2="27.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VUSB">
 <contactref element="U$1" pad="VUSB"/>
-<contactref element="U$2" pad="VUSB"/>
-<wire x1="-26.67" y1="33.02" x2="-45.72" y2="33.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="U$1" pad="VIN"/>
-<contactref element="U$2" pad="VIN"/>
-<wire x1="-43.18" y1="35.56" x2="-24.13" y2="35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

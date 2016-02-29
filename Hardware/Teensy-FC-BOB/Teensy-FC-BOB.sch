@@ -222,6 +222,7 @@
 </classes>
 <parts>
 <part name="U$1" library="Teensy_3_and_LC_Series_Boards_v1.0" deviceset="TEENSY_3.1_ALL_PINS" device=""/>
+<part name="U$2" library="Teensy_3_and_LC_Series_Boards_v1.0" deviceset="TEENSY_3.1_ALL_PINS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -229,6 +230,7 @@
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="134.62" y="116.84"/>
+<instance part="U$2" gate="G$1" x="17.78" y="116.84"/>
 </instances>
 <busses>
 </busses>
