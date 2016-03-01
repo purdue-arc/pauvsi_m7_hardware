@@ -1836,7 +1836,17 @@ design rules under a new name.</description>
 <wire x1="-59.69" y1="10.16" x2="-78.74" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC_5V">
+<contactref element="PWM1" pad="2"/>
+<contactref element="PWM3" pad="2"/>
+<contactref element="PWM5" pad="2"/>
+<contactref element="PWM4" pad="2"/>
+<contactref element="PWM2" pad="2"/>
 <contactref element="5V" pad="2"/>
+<wire x1="-74.93" y1="-39.37" x2="-74.93" y2="-46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="-74.93" y1="-31.75" x2="-74.93" y2="-39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="-74.93" y1="-25.4" x2="-74.93" y2="-31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-74.93" y1="-19.05" x2="-74.93" y2="-25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-74.93" y1="-12.7" x2="-74.93" y2="-19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="PWM1" pad="1"/>
@@ -1852,16 +1862,6 @@ design rules under a new name.</description>
 <contactref element="PWM3" pad="1"/>
 <contactref element="RECEIVER" pad="21/A7"/>
 <wire x1="-44.45" y1="22.86" x2="-77.47" y2="-31.75" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$8">
-<contactref element="PWM4" pad="1"/>
-<contactref element="RECEIVER" pad="20/A6"/>
-<wire x1="-44.45" y1="20.32" x2="-77.47" y2="-25.4" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$9">
-<contactref element="PWM5" pad="1"/>
-<contactref element="RECEIVER" pad="5"/>
-<wire x1="-59.69" y1="20.32" x2="-77.47" y2="-39.37" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

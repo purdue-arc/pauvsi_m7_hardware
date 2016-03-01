@@ -6068,6 +6068,31 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="VCC_5V" class="0">
 <segment>
+<pinref part="PWM1" gate="A" pin="2"/>
+<wire x1="7.62" y1="127" x2="0" y2="127" width="0.1524" layer="91"/>
+<wire x1="0" y1="127" x2="0" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="0" y1="139.7" x2="17.78" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="PWM3" gate="A" pin="2"/>
+<wire x1="17.78" y1="139.7" x2="33.02" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="139.7" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="127" x2="17.78" y2="127" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="127" x2="17.78" y2="139.7" width="0.1524" layer="91"/>
+<label x="55.88" y="139.7" size="1.778" layer="95"/>
+<pinref part="PWM5" gate="A" pin="2"/>
+<wire x1="40.64" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="109.22" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="PWM4" gate="A" pin="2"/>
+<wire x1="25.4" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="109.22" x2="20.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="119.38" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="119.38" x2="33.02" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="PWM2" gate="A" pin="2"/>
+<wire x1="7.62" y1="109.22" x2="-7.62" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="109.22" x2="-7.62" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="139.7" x2="0" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="5V" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
 <label x="55.88" y="154.94" size="1.778" layer="95"/>
