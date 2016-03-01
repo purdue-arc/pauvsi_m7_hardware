@@ -5722,6 +5722,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="U$1" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="5V" library="pinhead" deviceset="PINHD-1X2" device="" value="5V"/>
 <part name="U$2" library="Power or GND " deviceset="GND_POWER" device=""/>
+<part name="PWM6" library="pinhead" deviceset="PINHD-1X3" device="" value="PWMOUT4"/>
+<part name="PWM7" library="pinhead" deviceset="PINHD-1X3" device="" value="PWMOUT3"/>
+<part name="PWM8" library="pinhead" deviceset="PINHD-1X3" device="" value="PWMOUT2"/>
+<part name="PWM9" library="pinhead" deviceset="PINHD-1X3" device="" value="PWMOUT1"/>
+<part name="U$3" library="Power or GND " deviceset="GND_POWER" device=""/>
+<part name="I2C1" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
+<part name="I2C2" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
+<part name="I2C3" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
+<part name="I2C4" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
+<part name="I2C5" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
 </parts>
 <sheets>
 <sheet>
@@ -5782,6 +5792,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="U$1" gate="G$1" x="0" y="73.66" rot="R180"/>
 <instance part="5V" gate="G$1" x="76.2" y="154.94"/>
 <instance part="U$2" gate="G$1" x="55.88" y="165.1" rot="R180"/>
+<instance part="PWM6" gate="A" x="-132.08" y="0" rot="R180"/>
+<instance part="PWM7" gate="A" x="-132.08" y="17.78" rot="R180"/>
+<instance part="PWM8" gate="A" x="-132.08" y="35.56" rot="R180"/>
+<instance part="PWM9" gate="A" x="-132.08" y="53.34" rot="R180"/>
+<instance part="U$3" gate="G$1" x="-154.94" y="71.12" rot="R180"/>
+<instance part="I2C1" gate="A" x="101.6" y="157.48" rot="R90"/>
+<instance part="I2C2" gate="A" x="119.38" y="157.48" rot="R90"/>
+<instance part="I2C3" gate="A" x="137.16" y="157.48" rot="R90"/>
+<instance part="I2C4" gate="A" x="154.94" y="157.48" rot="R90"/>
+<instance part="I2C5" gate="A" x="172.72" y="157.48" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5886,6 +5906,22 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="5V" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="157.48" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
 <label x="55.88" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PWM9" gate="A" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="-129.54" y1="50.8" x2="-154.94" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="50.8" x2="-154.94" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="PWM8" gate="A" pin="1"/>
+<wire x1="-129.54" y1="33.02" x2="-154.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="33.02" x2="-154.94" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="PWM7" gate="A" pin="1"/>
+<wire x1="-129.54" y1="15.24" x2="-154.94" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="15.24" x2="-154.94" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="PWM6" gate="A" pin="1"/>
+<wire x1="-129.54" y1="-2.54" x2="-154.94" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="-2.54" x2="-154.94" y2="15.24" width="0.1524" layer="91"/>
+<label x="-154.94" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC_3V3" class="0">
@@ -6072,6 +6108,26 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="73.66" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
 <label x="55.88" y="154.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="PWM9" gate="A" pin="2"/>
+<wire x1="-129.54" y1="53.34" x2="-116.84" y2="53.34" width="0.1524" layer="91"/>
+<label x="-116.84" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PWM8" gate="A" pin="2"/>
+<wire x1="-129.54" y1="35.56" x2="-116.84" y2="35.56" width="0.1524" layer="91"/>
+<label x="-116.84" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PWM7" gate="A" pin="2"/>
+<wire x1="-129.54" y1="17.78" x2="-116.84" y2="17.78" width="0.1524" layer="91"/>
+<label x="-116.84" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PWM6" gate="A" pin="2"/>
+<wire x1="-129.54" y1="0" x2="-116.84" y2="0" width="0.1524" layer="91"/>
+<label x="-116.84" y="0" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -6128,6 +6184,40 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-83.82" y1="167.64" x2="-83.82" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="RECEIVER" gate="G$1" pin="5/PWM"/>
 <wire x1="-83.82" y1="147.32" x2="-78.74" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="PWM9" gate="A" pin="3"/>
+<wire x1="-129.54" y1="55.88" x2="-93.98" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="55.88" x2="-93.98" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="FLIGHTCONTROL" gate="G$1" pin="20/A6/PWM"/>
+<wire x1="-93.98" y1="25.4" x2="-78.74" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="PWM8" gate="A" pin="3"/>
+<wire x1="-129.54" y1="38.1" x2="-96.52" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="38.1" x2="-96.52" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="FLIGHTCONTROL" gate="G$1" pin="21/A7/PWM"/>
+<wire x1="-96.52" y1="22.86" x2="-78.74" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="PWM7" gate="A" pin="3"/>
+<pinref part="FLIGHTCONTROL" gate="G$1" pin="22/A8/T/PWM"/>
+<wire x1="-129.54" y1="20.32" x2="-78.74" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="PWM6" gate="A" pin="3"/>
+<wire x1="-129.54" y1="2.54" x2="-96.52" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="2.54" x2="-96.52" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="FLIGHTCONTROL" gate="G$1" pin="23/A9/T/PWM"/>
+<wire x1="-96.52" y1="17.78" x2="-78.74" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
