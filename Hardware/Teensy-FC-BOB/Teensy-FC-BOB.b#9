@@ -1977,13 +1977,18 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="53.467" y1="36.322" x2="53.975" y2="36.83" width="0.254" layer="1"/>
 <wire x1="53.975" y1="36.83" x2="53.975" y2="37.735" width="0.254" layer="1"/>
 <wire x1="53.975" y1="37.735" x2="54.01" y2="37.77" width="0.254" layer="1"/>
-<wire x1="53.467" y1="43.18" x2="52.578" y2="42.291" width="0" layer="19" extent="1-16"/>
 <wire x1="54.41" y1="40.97" x2="54.41" y2="41.202" width="0.254" layer="1"/>
 <wire x1="54.41" y1="41.202" x2="56.261" y2="43.053" width="0.254" layer="1"/>
 <wire x1="56.261" y1="43.053" x2="57.9882" y2="43.053" width="0.254" layer="1"/>
 <wire x1="57.9882" y1="43.053" x2="58.293" y2="42.7482" width="0.254" layer="1"/>
+<wire x1="53.0352" y1="41.275" x2="52.959" y2="41.275" width="0.254" layer="1"/>
+<wire x1="52.959" y1="41.275" x2="52.578" y2="41.656" width="0.254" layer="1"/>
+<wire x1="52.578" y1="41.656" x2="52.578" y2="42.291" width="0.254" layer="1"/>
+<wire x1="52.578" y1="42.291" x2="52.578" y2="42.799" width="0.254" layer="1"/>
+<wire x1="52.578" y1="42.799" x2="53.594" y2="43.815" width="0.254" layer="1"/>
+<wire x1="53.594" y1="43.815" x2="55.499" y2="43.815" width="0.254" layer="1"/>
+<wire x1="55.499" y1="43.815" x2="56.261" y2="43.053" width="0.254" layer="1"/>
 <wire x1="54.01" y1="37.77" x2="56.21" y2="38.37" width="0" layer="19" extent="1-1"/>
-<wire x1="54.41" y1="41.202" x2="53.0352" y2="41.275" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL/SCLK">
 <contactref element="U1" pad="23"/>
@@ -2031,7 +2036,17 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="73.6092" y1="20.3454" x2="73.66" y2="20.32" width="0.254" layer="1"/>
 <via x="67.437" y="35.2044" extent="1-16" drill="0.6096"/>
 <via x="48.9204" y="13.716" extent="1-16" drill="0.6096"/>
-<wire x1="67.31" y1="36.6" x2="54.01" y2="40.97" width="0" layer="19" extent="1-1"/>
+<wire x1="54.01" y1="40.97" x2="54.01" y2="41.31" width="0.254" layer="1"/>
+<wire x1="54.01" y1="41.31" x2="55.118" y2="42.418" width="0.254" layer="1"/>
+<wire x1="55.118" y1="42.418" x2="55.118" y2="43.053" width="0.254" layer="1"/>
+<via x="55.118" y="43.053" extent="1-16" drill="0.6"/>
+<wire x1="55.118" y1="43.053" x2="58.547" y2="43.053" width="0.254" layer="16"/>
+<wire x1="58.547" y1="43.053" x2="64.262" y2="37.338" width="0.254" layer="16"/>
+<via x="64.262" y="37.338" extent="1-16" drill="0.6"/>
+<wire x1="64.262" y1="37.338" x2="64.643" y2="37.338" width="0.254" layer="1"/>
+<wire x1="64.643" y1="37.338" x2="65.278" y2="37.973" width="0.254" layer="1"/>
+<wire x1="65.278" y1="37.973" x2="65.937" y2="37.973" width="0.254" layer="1"/>
+<wire x1="65.937" y1="37.973" x2="67.31" y2="36.6" width="0.254" layer="1"/>
 </signal>
 <signal name="SDA/SDI">
 <contactref element="U1" pad="24"/>
