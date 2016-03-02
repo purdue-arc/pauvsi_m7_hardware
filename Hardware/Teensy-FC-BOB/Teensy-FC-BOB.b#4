@@ -143,9 +143,9 @@
 <board>
 <plain>
 <wire x1="0" y1="0" x2="75.87" y2="0" width="0" layer="20"/>
-<wire x1="75.87" y1="0" x2="75.87" y2="45.71" width="0" layer="20"/>
-<wire x1="75.87" y1="45.71" x2="0" y2="45.71" width="0" layer="20"/>
-<wire x1="0" y1="45.71" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="75.87" y1="0" x2="75.87" y2="46.98" width="0" layer="20"/>
+<wire x1="75.87" y1="46.98" x2="0" y2="46.98" width="0" layer="20"/>
+<wire x1="0" y1="46.98" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="Discrete-new">

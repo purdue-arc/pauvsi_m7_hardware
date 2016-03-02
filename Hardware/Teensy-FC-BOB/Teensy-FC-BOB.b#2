@@ -148,6 +148,13 @@
 <wire x1="0" y1="46.98" x2="0" y2="0" width="0" layer="20"/>
 <text x="7.62" y="45.339" size="1.016" layer="25" font="vector">Purdue AUVSI IARC 2016 Teensy Based Flight Controller</text>
 <text x="12.446" y="43.942" size="0.8128" layer="25" font="vector">Designed by Kevin Sheridan and Casimir Duchnowski</text>
+<text x="10.033" y="2.667" size="1.016" layer="25" font="vector">Receiver Teensy</text>
+<text x="27.94" y="2.794" size="1.016" layer="25" font="vector">Flight Controller Teensy</text>
+<text x="68.199" y="7.874" size="0.6096" layer="25" font="vector">GND-SDA-SCL</text>
+<text x="58.674" y="8.509" size="0.6096" layer="25" font="vector">GND-5Volts</text>
+<text x="58.547" y="31.369" size="0.6096" layer="25" font="vector">GND-5Volts-PWM</text>
+<text x="49.022" y="8.763" size="0.6096" layer="25" font="vector">PWMIN-5Volts-GND</text>
+<text x="51.816" y="4.064" size="0.6096" layer="25" font="vector">Indicator LEDS</text>
 </plain>
 <libraries>
 <library name="Discrete-new">

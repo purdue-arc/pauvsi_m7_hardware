@@ -1988,7 +1988,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="52.578" y1="42.799" x2="53.594" y2="43.815" width="0.254" layer="1"/>
 <wire x1="53.594" y1="43.815" x2="55.499" y2="43.815" width="0.254" layer="1"/>
 <wire x1="55.499" y1="43.815" x2="56.261" y2="43.053" width="0.254" layer="1"/>
-<wire x1="54.01" y1="37.77" x2="56.21" y2="38.37" width="0" layer="19" extent="1-1"/>
+<wire x1="54.01" y1="37.77" x2="54.01" y2="38.135" width="0.254" layer="1"/>
+<wire x1="54.01" y1="38.135" x2="54.229" y2="38.354" width="0.254" layer="1"/>
+<wire x1="54.229" y1="38.354" x2="56.194" y2="38.354" width="0.254" layer="1"/>
+<wire x1="56.194" y1="38.354" x2="56.21" y2="38.37" width="0.254" layer="1"/>
 </signal>
 <signal name="SCL/SCLK">
 <contactref element="U1" pad="23"/>

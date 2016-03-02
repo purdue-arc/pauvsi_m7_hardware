@@ -2115,7 +2115,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="58.5216" y1="34.29" x2="59.6646" y2="35.433" width="0.254" layer="1"/>
 <wire x1="59.6646" y1="38.4048" x2="59.69" y2="38.608" width="0.254" layer="1"/>
 <wire x1="58.5216" y1="34.29" x2="58.42" y2="34.29" width="0.254" layer="1"/>
-<wire x1="55.61" y1="37.77" x2="59.6646" y2="38.4048" width="0" layer="19" extent="1-1"/>
+<wire x1="55.61" y1="37.77" x2="55.61" y2="37.1" width="0.254" layer="1"/>
+<wire x1="55.61" y1="37.1" x2="56.134" y2="36.576" width="0.254" layer="1"/>
+<via x="56.134" y="36.576" extent="1-16" drill="0.6"/>
+<wire x1="56.134" y1="36.576" x2="57.15" y2="36.576" width="0.254" layer="16"/>
+<wire x1="57.15" y1="36.576" x2="58.42" y2="37.846" width="0.254" layer="16"/>
+<via x="58.42" y="37.846" extent="1-16" drill="0.6"/>
+<wire x1="58.42" y1="37.846" x2="58.928" y2="37.846" width="0.254" layer="1"/>
+<wire x1="58.928" y1="37.846" x2="59.69" y2="38.608" width="0.254" layer="1"/>
 </signal>
 <signal name="AGND">
 <contactref element="RECEIVER" pad="AGND"/>
