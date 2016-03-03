@@ -12,6 +12,17 @@ void I2Cread(uint8_t Address, uint8_t Register, uint8_t Nbytes, uint8_t* Data)
   uint8_t index=0;
   while (Wire.available())
     Data[index++]=Wire.read();
+
+  int test = 0;
+  for(int i = 0; i < index; i++)
+  {
+    test += Data[i];
+  }
+
+  if(test == 0)
+  {
+    setLED13state(LEDMODE_ERROR);
+  }
 }
  
  

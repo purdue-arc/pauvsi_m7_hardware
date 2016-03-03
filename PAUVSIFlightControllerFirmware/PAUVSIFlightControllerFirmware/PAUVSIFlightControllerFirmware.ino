@@ -1,5 +1,13 @@
+#include <PID_v1.h>
 #include <Kalman.h>
 #include "Wire.h"
+
+#define   NUMLEDS   3
+#define   LEDMODE_INITIALIZING    0
+#define   INITIALIZING_BLINK_RATE   200
+#define   LEDMODE_ERROR    1
+#define   ERROR_BLINK_RATE   50
+#define   LED13PIN    13
 
 #define    MPU9250_ADDRESS            0x68
 #define    MAG_ADDRESS                0x0C
@@ -26,7 +34,21 @@ uint32_t IMUTimer = 0;
 Kalman kalmanX; 
 Kalman kalmanY;
 
+//setting up the PID for the rate controller
+//TODO
+//I'm am not 100% sure where these calculations will be done.
+//I think that any rate control will be done on the flight controller though
+
+//Indicator LED variables
+uint32_t LEDTimer[NUMLEDS] = {0, 0, 0};
+int LED_13_State = LEDMODE_INITIALIZING;
+int LED_A_State = LEDMODE_INITIALIZING;
+int LED_B_State = LEDMODE_INITIALIZING;
+
 void setup() {
+  //set up the LEDS
+  setupIndicatorLEDs();
+  
   Serial.begin(115200);
   Wire.begin();
 
@@ -47,6 +69,7 @@ void setup() {
 }
 
 void loop() {
+  updateIndicatorLEDs();
   attitude = readAndFuseIMU(attitude); // read IMU a fuse it using a kalmna filter which requries previous state
   Serial.printf("Pitch: %6.1f Roll: %6.1f Yaw_Rate: %6.1f\n", attitude.pitch, attitude.roll, attitude.yaw_rate);
 }
