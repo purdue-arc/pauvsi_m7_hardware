@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -148,6 +148,19 @@
 <wire x1="0" y1="46.98" x2="0" y2="0" width="0" layer="20"/>
 <text x="7.62" y="45.339" size="1.016" layer="25" font="vector">Purdue AUVSI IARC 2016 Teensy Based Flight Controller</text>
 <text x="12.446" y="43.942" size="0.8128" layer="25" font="vector">Designed by Kevin Sheridan and Casimir Duchnowski</text>
+<text x="10.033" y="2.667" size="1.016" layer="25" font="vector">Receiver Teensy</text>
+<text x="27.94" y="2.794" size="1.016" layer="25" font="vector">Flight Controller Teensy</text>
+<text x="68.199" y="7.874" size="0.6096" layer="25" font="vector">GND-SDA-SCL</text>
+<text x="58.674" y="8.509" size="0.6096" layer="25" font="vector">GND-5Volts</text>
+<text x="58.547" y="31.369" size="0.6096" layer="25" font="vector">GND-5Volts-PWM</text>
+<text x="49.022" y="8.763" size="0.6096" layer="25" font="vector">PWMIN-5Volts-GND</text>
+<text x="51.816" y="4.064" size="0.6096" layer="25" font="vector">Indicator LEDS</text>
+<text x="34.925" y="20.828" size="0.6096" layer="25" font="vector">Pull Ups</text>
+<text x="35.052" y="29.464" size="0.6096" layer="25" font="vector">Pull Ups</text>
+<hole x="2.794" y="2.794" drill="3.2"/>
+<hole x="2.794" y="42.799" drill="3.2"/>
+<hole x="72.771" y="2.794" drill="3.2"/>
+<hole x="72.771" y="42.799" drill="3.2"/>
 </plain>
 <libraries>
 <library name="Discrete-new">
@@ -1793,11 +1806,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="45.72" y1="6.1722" x2="44.8056" y2="5.2578" width="0.254" layer="16"/>
 <wire x1="24.2316" y1="6.1722" x2="24.13" y2="6.35" width="0.254" layer="16"/>
 <wire x1="45.72" y1="6.1722" x2="45.72" y2="6.35" width="0.254" layer="16"/>
-<wire x1="57.6072" y1="41.8338" x2="56.5912" y2="40.8178" width="0.254" layer="1"/>
-<wire x1="56.5912" y1="40.8178" x2="56.4642" y2="40.6908" width="0.254" layer="1"/>
-<wire x1="56.4642" y1="40.6908" x2="56.2356" y2="40.4622" width="0.254" layer="1"/>
-<wire x1="56.2356" y1="40.4622" x2="56.21" y2="40.37" width="0.254" layer="1"/>
-<wire x1="57.6072" y1="41.8338" x2="57.658" y2="41.91" width="0.254" layer="1"/>
 <wire x1="53.721" y1="34.29" x2="51.562" y2="34.29" width="0.254" layer="1"/>
 <wire x1="54.4068" y1="33.6042" x2="53.721" y2="34.29" width="0.254" layer="1"/>
 <wire x1="54.4068" y1="33.6042" x2="54.61" y2="33.528" width="0.254" layer="1"/>
@@ -1809,10 +1817,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="50.0634" y1="35.6616" x2="48.6918" y2="37.0332" width="0.254" layer="1"/>
 <wire x1="57.15" y1="44.3484" x2="57.15" y2="44.45" width="0.254" layer="1"/>
 <wire x1="51.435" y1="34.29" x2="51.562" y2="34.29" width="0.254" layer="1"/>
-<wire x1="56.9214" y1="40.2336" x2="56.4642" y2="40.6908" width="0.254" layer="1"/>
-<wire x1="56.9214" y1="35.8902" x2="56.9214" y2="40.2336" width="0.254" layer="1"/>
 <wire x1="54.6354" y1="33.6042" x2="56.1721" y2="35.1409" width="0.254" layer="1"/>
-<wire x1="56.1721" y1="35.1409" x2="56.9214" y2="35.8902" width="0.254" layer="1"/>
 <wire x1="54.6354" y1="33.6042" x2="54.61" y2="33.528" width="0.254" layer="1"/>
 <wire x1="56.007" y1="27.8892" x2="56.007" y2="24.2316" width="0.254" layer="1"/>
 <wire x1="56.007" y1="24.2316" x2="59.6646" y2="24.2316" width="0.254" layer="1"/>
@@ -1871,10 +1876,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="48.26" y1="41.402" x2="48.2346" y2="41.3766" width="0.3048" layer="1"/>
 <wire x1="55.21" y1="40.97" x2="55.21" y2="41.367" width="0.254" layer="1"/>
 <wire x1="55.21" y1="41.367" x2="55.499" y2="41.656" width="0.254" layer="1"/>
-<wire x1="55.499" y1="41.656" x2="55.753" y2="41.656" width="0.254" layer="1"/>
-<wire x1="55.753" y1="41.656" x2="56.5912" y2="40.8178" width="0.254" layer="1"/>
 <wire x1="55.21" y1="37.77" x2="55.21" y2="36.103" width="0.254" layer="1"/>
 <wire x1="55.21" y1="36.103" x2="56.1721" y2="35.1409" width="0.254" layer="1"/>
+<wire x1="56.21" y1="40.37" x2="57.658" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="55.21" y1="40.97" x2="56.21" y2="40.37" width="0" layer="19" extent="1-1"/>
+<wire x1="57.15" y1="44.3484" x2="57.658" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC_3V3">
 <contactref element="U1" pad="8"/>
@@ -2418,6 +2424,57 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="60.3504" y1="6.1722" x2="60.54" y2="6.35" width="0.254" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="3,1,08201b1a1b1f0825"/>
+<approved hash="3,1,0e2c1d261d230e29"/>
+<approved hash="3,1,0c381f321f370c3d"/>
+<approved hash="3,1,7244613e613b7241"/>
+<approved hash="3,1,7050634a634f7055"/>
+<approved hash="3,1,765c655665537659"/>
+<approved hash="3,1,767376707f667f65"/>
+<approved hash="3,1,027d02720364036b"/>
+<approved hash="3,1,1e7f1e7c176a1769"/>
+<approved hash="3,1,2a792a7e1b681b6f"/>
+<approved hash="3,1,267b26782f6e2f6d"/>
+<approved hash="3,1,3265327a336c3373"/>
+<approved hash="3,1,c544d64ed64dc547"/>
+<approved hash="3,1,c358d042d041c35b"/>
+<approved hash="3,1,c12cd256d255c12f"/>
+<approved hash="3,1,bf20ac2aac29bf23"/>
+<approved hash="3,1,bd34ae3eae3dbd37"/>
+<approved hash="3,1,bb08a832a831bb0b"/>
+<approved hash="3,1,430c43134205421a"/>
+<approved hash="3,1,5f0e5f0d561b5618"/>
+<approved hash="3,1,6b086b0f5a195a1e"/>
+<approved hash="3,1,670a67096e1f6e1c"/>
+<approved hash="3,1,7304730b721d7212"/>
+<approved hash="3,1,0f060f0506130610"/>
+<approved hash="4,1,06a4b89a8309afc1"/>
+<approved hash="4,1,df9c3fa83d3fe3f7"/>
+<approved hash="5,1,016e2c442c60870c"/>
+<approved hash="5,1,0a5ec5382ca2c13f"/>
+<approved hash="5,1,0852c5202cbac333"/>
+<approved hash="5,1,0e46c5382ca2c527"/>
+<approved hash="5,1,742ac5302caabf4b"/>
+<approved hash="5,1,aa8f0b241a05a049"/>
+<approved hash="5,1,7636c5382ca2bd57"/>
+<approved hash="5,1,e607d06cd71c1091"/>
+<approved hash="5,1,9667d0acd71c60f1"/>
+<approved hash="5,1,ea09dc6caf1c689f"/>
+<approved hash="5,1,9a69dcacaf1c18ff"/>
+<approved hash="5,1,8e6bc8aca71c10fd"/>
+<approved hash="5,1,fe0bc86ca71c609d"/>
+<approved hash="5,1,b26df4acaf1c18fb"/>
+<approved hash="5,1,c20df46caf1c689b"/>
+<approved hash="5,1,d60fe06cb71c7099"/>
+<approved hash="5,1,a66fe0acb71c00f9"/>
+<approved hash="5,1,a8436521ecbac322"/>
+<approved hash="5,1,ae576539eca2c536"/>
+<approved hash="5,1,9de9003c903d4ca2"/>
+<approved hash="5,1,aa4f6539eca2c12e"/>
+<approved hash="5,1,d6276539eca2bd46"/>
+<approved hash="5,1,d43b6531ecaabf5a"/>
+</errors>
 </board>
 </drawing>
 </eagle>
