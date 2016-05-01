@@ -1,6 +1,10 @@
 #include <PID_v1.h>
 #include <Kalman.h>
 #include "Wire.h"
+#include <ros.h>
+#include <ros/time.h>
+#include <geometry_msgs/Vector3Stamped.h>
+#include <sensor_msgs/Imu.h>
 
 #define   NUMLEDS   3
 #define   LEDMODE_INITIALIZING    0
@@ -26,8 +30,17 @@
 struct ATTITUDE {
   double pitch;
   double roll;
-  double yaw_rate;
+  double yaw;
 } attitude;
+
+struct RAW_IMU_DATA {
+  int16_t ax;
+  int16_t ay;
+  int16_t az;
+  int16_t gx;
+  int16_t gy;
+  int16_t gz;
+} rawIMUData;
 
 uint32_t IMUTimer = 0;
 // Create the Kalman instances
@@ -45,17 +58,24 @@ int LED_13_State = LEDMODE_INITIALIZING;
 int LED_A_State = LEDMODE_INITIALIZING;
 int LED_B_State = LEDMODE_INITIALIZING;
 
+//Setup ROS_SERIAL
+ros::NodeHandle  nh;
+geometry_msgs::Vector3Stamped attitude_msg;
+ros::Publisher pub_attitude( "IMUEulerEstimate", &attitude_msg);
+sensor_msgs::Imu rawIMU_msg;
+ros::Publisher pub_IMU( "IMU_Full", &rawIMU_msg);
+
 void setup() {
   //set up the LEDS
   setupIndicatorLEDs();
   
-  Serial.begin(115200);
+  //Serial.begin(115200);
   Wire.begin();
 
   // Configure gyroscope range
   I2CwriteByte(MPU9250_ADDRESS,27,GYRO_FULL_SCALE_2000_DPS);
   // Configure accelerometers range
-  I2CwriteByte(MPU9250_ADDRESS,28,ACC_FULL_SCALE_16_G);
+  I2CwriteByte(MPU9250_ADDRESS,28,ACC_FULL_SCALE_4_G);
   // Set by pass mode for the magnetometers
   I2CwriteByte(MPU9250_ADDRESS,0x37,0x02);
  
@@ -66,10 +86,29 @@ void setup() {
   //this will initialize the kalman filter with a starting angle
   //based off the accelerometer
   initializeKalmanFusion();
+
+  //setup ROS Subs and Pubs
+  nh.initNode();
+  nh.advertise(pub_attitude);
+  nh.advertise(pub_IMU);
 }
 
 void loop() {
+  //update the LEDs for status
   updateIndicatorLEDs();
-  attitude = readAndFuseIMU(attitude); // read IMU a fuse it using a kalmna filter which requries previous state
-  Serial.printf("Pitch: %6.1f Roll: %6.1f Yaw_Rate: %6.1f\n", attitude.pitch, attitude.roll, attitude.yaw_rate);
+  
+  //read the pitch and roll from IMU and set the new attitude est
+  attitude = readAndFuseIMU(attitude, &rawIMUData); // read IMU a fuse it using a kalmna filter which requries previous state
+  
+  //contruct attitde message and publish it
+  attitude_msg = contructAngleMessage(attitude);
+  attitude_msg.header.stamp = nh.now();
+  pub_attitude.publish(&attitude_msg);
+
+  //conctruct the IMU msg and publish
+  rawIMU_msg = constructIMUMessage(attitude, rawIMUData);
+  rawIMU_msg.header.stamp = nh.now();
+  pub_IMU.publish(&rawIMU_msg);
+  
+  nh.spinOnce();
 }

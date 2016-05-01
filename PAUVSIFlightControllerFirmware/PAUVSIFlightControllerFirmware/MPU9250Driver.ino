@@ -64,7 +64,7 @@ ATTITUDE initializeKalmanFusion()
   ATTITUDE retAtt;
   retAtt.roll = accRoll;
   retAtt.pitch = accPitch;
-  retAtt.yaw_rate = gz;
+  retAtt.yaw = 0;
 
   return retAtt;
 }
@@ -88,12 +88,12 @@ ATTITUDE kalmanFuseData(int ax, int ay, int az, int gx, int gy, int gz, double d
     gy = -gy; // Invert rate, so it fits the restriced accelerometer reading
   retAtt.pitch = kalmanY.getAngle(accPitch, gy, dt);
 
-  retAtt.yaw_rate = gz;
+  //retAtt.yaw_rate = gz; do not set the yaw_rate
 
   return retAtt;
 }
 
-ATTITUDE readAndFuseIMU(ATTITUDE lastAtt)
+ATTITUDE readAndFuseIMU(ATTITUDE lastAtt, RAW_IMU_DATA* rawData)
 {
   // ____________________________________
   // :::  accelerometer and gyroscope :::
@@ -106,16 +106,25 @@ ATTITUDE readAndFuseIMU(ATTITUDE lastAtt)
   double dt = (double)(micros() - IMUTimer) / 1000000;
 
   // Create 16 bits values from 8 bits data
-
+  RAW_IMU_DATA temp;
   // Accelerometer
   int16_t ax = (Buf[0] << 8 | Buf[1]);
+  temp.ax = ax;
   int16_t ay = (Buf[2] << 8 | Buf[3]);
+  temp.ay = ay;
   int16_t az = Buf[4] << 8 | Buf[5];
+  temp.az = az;
 
   // Gyroscope
   int16_t gx = (Buf[8] << 8 | Buf[9]);
+  temp.gx = gx;
   int16_t gy = (Buf[10] << 8 | Buf[11]);
+  temp.gy = gy;
   int16_t gz = Buf[12] << 8 | Buf[13];
+  temp.gz = gz;
+
+  //set the rawData
+  *rawData = temp;
 
   return kalmanFuseData(ax, ay, az, gx, gy, gz, dt, lastAtt);
 }
