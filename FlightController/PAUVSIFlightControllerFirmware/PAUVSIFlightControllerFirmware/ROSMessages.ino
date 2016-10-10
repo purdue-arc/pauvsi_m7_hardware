@@ -54,13 +54,13 @@ sensor_msgs::Imu constructIMUMessage(ATTITUDE att, RAW_IMU_DATA rawData)
 
   // convert to m/s/s (+/- 4) and degrees/s (+/- 2000)
 
-  msg.angular_velocity.x = (double)rawData.gx / 16.3835;
-  msg.angular_velocity.y = (double)rawData.gy / 16.3835;
+  msg.angular_velocity.x = -1 * (double)rawData.gx / 16.3835;
+  msg.angular_velocity.y = -1 * (double)rawData.gy / 16.3835;
   msg.angular_velocity.z = (double)rawData.gz / 16.3835;
 
-  msg.linear_acceleration.x = ((double)rawData.ax / 8191.75) * 9.8;
-  msg.linear_acceleration.y = ((double)rawData.ay / 8191.75) * 9.8;
-  msg.linear_acceleration.z = ((double)rawData.az / 8191.75) * 9.8;
+  msg.linear_acceleration.x = -1 * ((double)rawData.ax / 8191.75) * 9.8;
+  msg.linear_acceleration.y = -1 * ((double)rawData.ay / 8191.75) * 9.8;
+  msg.linear_acceleration.z = -1 * ((double)rawData.az / 8191.75) * 9.8;
 
   //create the covariance for the sensors
   float covar[9] = {1.2184696791468346e-07, 0, 0, 0, 1.2184696791468346e-07, 0, 0, 0, 1.2184696791468346e-07};
