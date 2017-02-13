@@ -7232,12 +7232,6 @@ Source: www.kingbright.com</description>
 <part name="PWM8" library="pinhead" deviceset="PINHD-1X3" device="" value="PWMOUT2"/>
 <part name="PWM9" library="pinhead" deviceset="PINHD-1X3" device="" value="PWMOUT1"/>
 <part name="U$3" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="I2C1" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
-<part name="I2C2" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
-<part name="I2C3" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
-<part name="I2C4" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
-<part name="I2C5" library="pinhead" deviceset="PINHD-1X3" device="" value="GND-SDA-SCL"/>
-<part name="U$4" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="FA" library="led" deviceset="LED" device="CHIP-LED0603" value="Blue"/>
 <part name="FB" library="led" deviceset="LED" device="CHIP-LED0603" value="Red"/>
 <part name="RA" library="led" deviceset="LED" device="CHIP-LED0603" value="Blue"/>
@@ -7245,6 +7239,13 @@ Source: www.kingbright.com</description>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0603" value="100"/>
 <part name="U$15" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0603" value="150"/>
+<part name="PWM10" library="pinhead" deviceset="PINHD-1X3" device="" value="PWM6"/>
+<part name="PWM11" library="pinhead" deviceset="PINHD-1X3" device="" value="PWM10"/>
+<part name="PWM12" library="pinhead" deviceset="PINHD-1X3" device="" value="PWM7"/>
+<part name="PWM13" library="pinhead" deviceset="PINHD-1X3" device="" value="PWM9"/>
+<part name="PWM14" library="pinhead" deviceset="PINHD-1X3" device="" value="PWM8"/>
+<part name="SONAR" library="pinhead" deviceset="PINHD-1X3" device="" value="PWM8"/>
+<part name="U$4" library="Power or GND " deviceset="GND_POWER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7310,12 +7311,6 @@ Source: www.kingbright.com</description>
 <instance part="PWM8" gate="A" x="-132.08" y="35.56" rot="R180"/>
 <instance part="PWM9" gate="A" x="-132.08" y="53.34" rot="R180"/>
 <instance part="U$3" gate="G$1" x="-154.94" y="71.12" rot="R180"/>
-<instance part="I2C1" gate="A" x="101.6" y="157.48" rot="R90"/>
-<instance part="I2C2" gate="A" x="119.38" y="157.48" rot="R90"/>
-<instance part="I2C3" gate="A" x="137.16" y="157.48" rot="R90"/>
-<instance part="I2C4" gate="A" x="154.94" y="157.48" rot="R90"/>
-<instance part="I2C5" gate="A" x="172.72" y="157.48" rot="R90"/>
-<instance part="U$4" gate="G$1" x="99.06" y="137.16" rot="R270"/>
 <instance part="FA" gate="G$1" x="-124.46" y="86.36" rot="R270"/>
 <instance part="FB" gate="G$1" x="-124.46" y="76.2" rot="R270"/>
 <instance part="RA" gate="G$1" x="-116.84" y="121.92" rot="R270"/>
@@ -7323,6 +7318,13 @@ Source: www.kingbright.com</description>
 <instance part="R4" gate="G$1" x="-111.76" y="86.36" rot="R180"/>
 <instance part="U$15" gate="G$1" x="-149.86" y="127" rot="R180"/>
 <instance part="R6" gate="G$1" x="-111.76" y="76.2" rot="R180"/>
+<instance part="PWM10" gate="A" x="50.8" y="127"/>
+<instance part="PWM11" gate="A" x="66.04" y="109.22"/>
+<instance part="PWM12" gate="A" x="76.2" y="127"/>
+<instance part="PWM13" gate="A" x="91.44" y="109.22"/>
+<instance part="PWM14" gate="A" x="99.06" y="127"/>
+<instance part="SONAR" gate="A" x="139.7" y="149.86"/>
+<instance part="U$4" gate="G$1" x="99.06" y="149.86" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7420,6 +7422,16 @@ Source: www.kingbright.com</description>
 <wire x1="40.64" y1="106.68" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="106.68" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="93.98" x2="-5.08" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="PWM11" gate="A" pin="3"/>
+<wire x1="63.5" y1="106.68" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="PWM10" gate="A" pin="3"/>
+<wire x1="48.26" y1="124.46" x2="25.4" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="PWM12" gate="A" pin="3"/>
+<wire x1="73.66" y1="124.46" x2="48.26" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="PWM13" gate="A" pin="3"/>
+<wire x1="88.9" y1="106.68" x2="63.5" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="PWM14" gate="A" pin="3"/>
+<wire x1="96.52" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
@@ -7445,28 +7457,6 @@ Source: www.kingbright.com</description>
 <label x="-154.94" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="I2C1" gate="A" pin="1"/>
-<wire x1="99.06" y1="154.94" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="I2C5" gate="A" pin="1"/>
-<wire x1="99.06" y1="137.16" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="137.16" x2="134.62" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="137.16" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="137.16" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="I2C2" gate="A" pin="1"/>
-<wire x1="116.84" y1="154.94" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
-<junction x="116.84" y="137.16"/>
-<junction x="134.62" y="137.16"/>
-<junction x="152.4" y="137.16"/>
-<pinref part="I2C3" gate="A" pin="1"/>
-<wire x1="134.62" y1="154.94" x2="134.62" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="I2C4" gate="A" pin="1"/>
-<wire x1="152.4" y1="154.94" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
-<label x="104.14" y="137.16" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="GND"/>
-<junction x="99.06" y="137.16"/>
-</segment>
-<segment>
 <pinref part="RA" gate="G$1" pin="C"/>
 <pinref part="U$15" gate="G$1" pin="GND"/>
 <wire x1="-121.92" y1="121.92" x2="-149.86" y2="121.92" width="0.1524" layer="91"/>
@@ -7478,6 +7468,11 @@ Source: www.kingbright.com</description>
 <wire x1="-129.54" y1="76.2" x2="-149.86" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-149.86" y1="76.2" x2="-149.86" y2="86.36" width="0.1524" layer="91"/>
 <label x="-149.86" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="SONAR" gate="A" pin="2"/>
+<wire x1="99.06" y1="149.86" x2="137.16" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_3V3" class="0">
@@ -7584,31 +7579,6 @@ Source: www.kingbright.com</description>
 <pinref part="FLIGHTCONTROL" gate="G$1" pin="19/A5/T/SCL0"/>
 <wire x1="-83.82" y1="27.94" x2="-78.74" y2="27.94" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="I2C1" gate="A" pin="3"/>
-<wire x1="104.14" y1="154.94" x2="104.14" y2="142.24" width="0.1524" layer="91"/>
-<label x="104.14" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="I2C2" gate="A" pin="3"/>
-<wire x1="121.92" y1="154.94" x2="121.92" y2="139.7" width="0.1524" layer="91"/>
-<label x="121.92" y="139.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="I2C3" gate="A" pin="3"/>
-<wire x1="139.7" y1="154.94" x2="139.7" y2="142.24" width="0.1524" layer="91"/>
-<label x="139.7" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="I2C4" gate="A" pin="3"/>
-<wire x1="157.48" y1="154.94" x2="157.48" y2="139.7" width="0.1524" layer="91"/>
-<label x="157.48" y="139.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="I2C5" gate="A" pin="3"/>
-<wire x1="175.26" y1="154.94" x2="175.26" y2="142.24" width="0.1524" layer="91"/>
-<label x="175.26" y="142.24" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SDA/SDI" class="0">
 <segment>
@@ -7633,31 +7603,6 @@ Source: www.kingbright.com</description>
 <wire x1="-17.78" y1="2.54" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="35.56" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="35.56" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="I2C1" gate="A" pin="2"/>
-<wire x1="101.6" y1="154.94" x2="101.6" y2="144.78" width="0.1524" layer="91"/>
-<label x="101.6" y="144.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="I2C2" gate="A" pin="2"/>
-<wire x1="119.38" y1="154.94" x2="119.38" y2="144.78" width="0.1524" layer="91"/>
-<label x="119.38" y="144.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="I2C3" gate="A" pin="2"/>
-<wire x1="137.16" y1="154.94" x2="137.16" y2="144.78" width="0.1524" layer="91"/>
-<label x="137.16" y="144.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="I2C4" gate="A" pin="2"/>
-<wire x1="154.94" y1="154.94" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
-<label x="154.94" y="144.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="I2C5" gate="A" pin="2"/>
-<wire x1="172.72" y1="154.94" x2="172.72" y2="144.78" width="0.1524" layer="91"/>
-<label x="172.72" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="AD0/SDO" class="0">
@@ -7719,6 +7664,7 @@ Source: www.kingbright.com</description>
 <wire x1="-129.54" y1="53.34" x2="-116.84" y2="53.34" width="0.1524" layer="91"/>
 <label x="-116.84" y="53.34" size="1.778" layer="95"/>
 <label x="50.8" y="91.44" size="1.778" layer="95"/>
+<label x="106.68" y="144.78" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="PWM8" gate="A" pin="2"/>
@@ -7873,6 +7819,52 @@ Source: www.kingbright.com</description>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="FB" gate="G$1" pin="A"/>
 <wire x1="-116.84" y1="76.2" x2="-121.92" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<wire x1="50.8" y1="91.44" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="PWM5" gate="A" pin="2"/>
+<wire x1="50.8" y1="109.22" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="PWM4" gate="A" pin="2"/>
+<wire x1="40.64" y1="109.22" x2="25.4" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="PWM2" gate="A" pin="2"/>
+<wire x1="25.4" y1="109.22" x2="7.62" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="109.22" x2="0" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="0" y1="109.22" x2="0" y2="127" width="0.1524" layer="91"/>
+<pinref part="PWM1" gate="A" pin="2"/>
+<wire x1="0" y1="127" x2="7.62" y2="127" width="0.1524" layer="91"/>
+<pinref part="PWM3" gate="A" pin="2"/>
+<wire x1="7.62" y1="127" x2="25.4" y2="127" width="0.1524" layer="91"/>
+<pinref part="PWM10" gate="A" pin="2"/>
+<wire x1="25.4" y1="127" x2="48.26" y2="127" width="0.1524" layer="91"/>
+<pinref part="PWM12" gate="A" pin="2"/>
+<wire x1="48.26" y1="127" x2="73.66" y2="127" width="0.1524" layer="91"/>
+<pinref part="PWM14" gate="A" pin="2"/>
+<wire x1="73.66" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
+<pinref part="PWM11" gate="A" pin="2"/>
+<wire x1="63.5" y1="109.22" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="PWM13" gate="A" pin="2"/>
+<wire x1="63.5" y1="109.22" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="SONAR" gate="A" pin="1"/>
+<wire x1="137.16" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="152.4" x2="83.82" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="172.72" x2="-88.9" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="172.72" x2="-88.9" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="RECEIVER" gate="G$1" pin="7/RX3"/>
+<wire x1="-88.9" y1="142.24" x2="-78.74" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<wire x1="106.68" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="127" y1="144.78" x2="127" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="SONAR" gate="A" pin="3"/>
+<wire x1="127" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

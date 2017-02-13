@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7863,6 +7863,75 @@ Source: www.kingbright.com</description>
 <pinref part="PWM13" gate="A" pin="2"/>
 <wire x1="63.5" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="127" x2="91.44" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="PWM10" gate="A" pin="1"/>
+<wire x1="45.72" y1="129.54" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="129.54" x2="40.64" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="177.8" x2="-91.44" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="177.8" x2="-91.44" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="RECEIVER" gate="G$1" pin="2"/>
+<wire x1="-91.44" y1="154.94" x2="-78.74" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="PWM12" gate="A" pin="1"/>
+<wire x1="71.12" y1="129.54" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="129.54" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="142.24" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="142.24" x2="45.72" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="180.34" x2="-93.98" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="180.34" x2="-93.98" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="RECEIVER" gate="G$1" pin="6/PWM"/>
+<wire x1="-93.98" y1="144.78" x2="-78.74" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="PWM14" gate="A" pin="1"/>
+<wire x1="91.44" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="129.54" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="139.7" x2="58.42" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="147.32" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="147.32" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="160.02" x2="-12.7" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="160.02" x2="-12.7" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="175.26" x2="-93.98" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="175.26" x2="-93.98" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="RECEIVER" gate="G$1" pin="11/MOSI"/>
+<wire x1="-93.98" y1="132.08" x2="-78.74" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="PWM11" gate="A" pin="1"/>
+<wire x1="63.5" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="111.76" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="83.82" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="157.48" x2="-17.78" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="157.48" x2="-17.78" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="165.1" x2="-96.52" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="165.1" x2="-96.52" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="RECEIVER" gate="G$1" pin="12/MISO"/>
+<wire x1="-96.52" y1="129.54" x2="-78.74" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="PWM13" gate="A" pin="1"/>
+<wire x1="91.44" y1="111.76" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="111.76" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-5.08" x2="-101.6" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-5.08" x2="-101.6" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="114.3" x2="-91.44" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="114.3" x2="-91.44" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="RECEIVER" gate="G$1" pin="14/A0"/>
+<wire x1="-91.44" y1="124.46" x2="-78.74" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -350,7 +350,7 @@ UsedLibrary="/Applications/EAGLE-7.7.0/lbr/zilog.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="0 0 1279 799"
+Loc="0 23 1279 709"
 State=2
 Number=1
 File="Teensy-FC-BOB2.sch"
@@ -398,7 +398,7 @@ Sheet="1"
 
 [Win_2]
 Type="Board Editor"
-Loc="0 0 1279 799"
+Loc="0 23 1279 709"
 State=2
 Number=2
 File="Teensy-FC-BOB2.brd"
@@ -449,7 +449,7 @@ State=2
 Number=0
 
 [Desktop]
-Screen="640 480"
+Screen="1280 800"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"
