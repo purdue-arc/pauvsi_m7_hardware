@@ -1508,6 +1508,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+<clearance class="0" value="0.205"/>
 </class>
 </classes>
 <designrules name="LaenPCBOrder">
@@ -2033,7 +2034,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="34.96" y1="14.2844" x2="34.6202" y2="13.9446" width="0.254" layer="1"/>
 <wire x1="34.6202" y1="13.9446" x2="32.131" y2="13.9446" width="0.254" layer="1"/>
 <wire x1="32.131" y1="13.9446" x2="31.7754" y2="14.3002" width="0.254" layer="1"/>
-<wire x1="30.48" y1="3.81" x2="28.6512" y2="3.81" width="0" layer="19" extent="1-16"/>
 <wire x1="28.6512" y1="3.81" x2="27.2034" y2="5.2578" width="0.254" layer="1"/>
 <wire x1="38.1" y1="9.398" x2="37.1348" y2="9.398" width="0.254" layer="1"/>
 <wire x1="37.1348" y1="9.398" x2="37.0078" y2="9.271" width="0.254" layer="1"/>
@@ -2070,6 +2070,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="40.4622" y="21.1074" extent="1-16" drill="0.6"/>
 <wire x1="40.4622" y1="21.1074" x2="40.4622" y2="22.5298" width="0.254" layer="1"/>
 <wire x1="40.4622" y1="22.5298" x2="39.37" y2="23.622" width="0.254" layer="1"/>
+<wire x1="30.48" y1="3.81" x2="28.6512" y2="3.81" width="0.254" layer="1"/>
 </signal>
 <signal name="SCL/SCLK">
 <contactref element="U1" pad="23"/>
@@ -2135,7 +2136,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="31.0134" y="6.3754" extent="1-16" drill="0.6"/>
 <wire x1="31.0134" y1="6.3754" x2="31.0134" y2="5.6388" width="0.254" layer="1"/>
 <wire x1="31.0134" y1="5.6388" x2="31.75" y2="4.9022" width="0.254" layer="1"/>
-<wire x1="31.75" y1="4.9022" x2="31.75" y2="3.81" width="0" layer="19" extent="1-16"/>
+<wire x1="31.75" y1="4.9022" x2="31.75" y2="3.81" width="0.254" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="U1" pad="10"/>
@@ -2513,6 +2514,10 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="5,1,6f0278a4e0669aba"/>
 <approved hash="5,1,562d7687b6ff9605"/>
 <approved hash="5,1,1f227ab1cfb05294"/>
+<approved hash="6,1,d584ba7bdd364d3f"/>
+<approved hash="6,1,3d4d1175d642f885"/>
+<approved hash="6,1,03395014ff07f648"/>
+<approved hash="6,1,2473160d09113b6f"/>
 <approved hash="5,1,b9c80c4458177560"/>
 <approved hash="5,1,267726f55e2d5e1f"/>
 <approved hash="5,1,e5fd92e9d32c5db8"/>
@@ -2521,8 +2526,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="5,1,76ff8eebf696a031"/>
 <approved hash="5,1,6e314ec3b6eb9669"/>
 <approved hash="5,1,4a4b5ef516667057"/>
-<approved hash="5,1,db26ebf89380a31e"/>
 <approved hash="5,1,7e492bf8dbc9c855"/>
+<approved hash="5,1,db26ebf89380a31e"/>
 <approved hash="5,1,62574a05fa6a884b"/>
 </errors>
 </board>

@@ -2135,7 +2135,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="31.0134" y="6.3754" extent="1-16" drill="0.6"/>
 <wire x1="31.0134" y1="6.3754" x2="31.0134" y2="5.6388" width="0.254" layer="1"/>
 <wire x1="31.0134" y1="5.6388" x2="31.75" y2="4.9022" width="0.254" layer="1"/>
-<wire x1="31.75" y1="4.9022" x2="31.75" y2="3.81" width="0.254" layer="1"/>
+<wire x1="31.75" y1="4.9022" x2="31.75" y2="3.81" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="U1" pad="10"/>
