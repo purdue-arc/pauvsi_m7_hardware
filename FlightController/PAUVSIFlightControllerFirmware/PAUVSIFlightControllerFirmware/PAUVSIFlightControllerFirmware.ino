@@ -61,9 +61,9 @@ int LED_B_State = LEDMODE_INITIALIZING;
 //Setup ROS_SERIAL
 ros::NodeHandle  nh;
 geometry_msgs::Vector3Stamped attitude_msg;
-ros::Publisher pub_attitude( "IMUEulerEstimate", &attitude_msg);
+ros::Publisher pub_attitude( "/m7/imu/euler", &attitude_msg);
 sensor_msgs::Imu rawIMU_msg;
-ros::Publisher pub_IMU( "IMU_Full", &rawIMU_msg);
+ros::Publisher pub_IMU( "/m7/imu/measurement", &rawIMU_msg);
 
 void setup() {
   //set up the LEDS

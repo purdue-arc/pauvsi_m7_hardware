@@ -65,16 +65,16 @@ sensor_msgs::Imu constructIMUMessage(ATTITUDE att, RAW_IMU_DATA rawData)
   //create the covariance for the sensors
   float covar[9] = {1.2184696791468346e-07, 0, 0, 0, 1.2184696791468346e-07, 0, 0, 0, 1.2184696791468346e-07};
   memcpy(msg.angular_velocity_covariance, covar, 9);
-  msg.angular_velocity_covariance[0] = 1.2184696791468346e-07;
-  msg.angular_velocity_covariance[4] = 1.2184696791468346e-07;
-  msg.angular_velocity_covariance[8] = 1.2184696791468346e-07;
+  msg.angular_velocity_covariance[0] = 0.005;
+  msg.angular_velocity_covariance[4] = 0.005;
+  msg.angular_velocity_covariance[8] = 0.005;
   //msg.angular_velocity_covariance = covar;
   
   float covar2[9] = {8.99999999e-08, 0, 0, 0, 8.99999999e-08, 0, 0, 0, 8.99999999e-08};
   memcpy(msg.linear_acceleration_covariance, covar2, 9);
-  msg.linear_acceleration_covariance[0] = 8.99999999e-08;
-  msg.linear_acceleration_covariance[4] = 8.99999999e-08;
-  msg.linear_acceleration_covariance[8] = 8.99999999e-08;
+  msg.linear_acceleration_covariance[0] = 0.01;
+  msg.linear_acceleration_covariance[4] = 0.01;
+  msg.linear_acceleration_covariance[8] = 0.01;
   //msg.linear_acceleration_covariance = covar2;
 
   return msg;
