@@ -3,9 +3,10 @@
 #include <ax12.h>
 #include <sensor_msgs/JointState.h>
 
-#define NO_SERVO 6
+#define NO_SERVO 1
 #define setSpeed(id, pos) (ax12SetRegister2(id, AX_GOAL_SPEED_L, pos))
 #define getSpeed(id)(ax12GetRegister(id, AX_PRESENT_SPEED_L, 2))
+#define setTorqueLimit(id, pos)(ax12SetRegister2())
 
 ros::NodeHandle nh;
 sensor_msgs::JointState msg;
@@ -25,6 +26,7 @@ unsigned int seq;
 void setup()
 {
   seq = 0;
+  ax12SetRegister(1, AX_LED, 1);
   opState.velocity_length = NO_SERVO;
   opState.position_length = NO_SERVO;
   opState.effort_length = NO_SERVO;  
@@ -41,7 +43,7 @@ void loop()
   {
     //9.55 rpm = 1 rad/s
     //0.111 rpm per unit
-    setSpeed(i+1, int(9.55*msg.velocity[i] / 0.111));
+    setSpeed(i+1, int(9.55*float(msg.velocity[i]) / 0.111));
     delay(10);
   }
   for(int i=0; i<length; ++i)
